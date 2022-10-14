@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="25" time="349.183">
+    <testcase classname="Working of autosuggestion functionality" name="prompting user with suggestions based on query" time="13.87">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user types query in search bar from properties file....................passed
+Then user is prompted with valid suggestions................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Working of autosuggestion functionality" name="redirecting to search results from suggestions" time="7.828">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user types query "jagdish" in search bar...............................passed
+And user clicks on suggested query..........................................passed
+Then user is redirected to search results...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Working of autosuggestion functionality" name="navigation through suggestions" time="5.968">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user types query "bhagat" in search bar................................passed
+And user clicks on down arrow key...........................................passed
+Then user is redirected to next suggestion from the list....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="obtaining search results for various types of data" name="obtaining search results for alphabet characters" time="7.781">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user enters query as "dan" in search bar...............................passed
+Then user obtains search results same as "dan"..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="obtaining search results for various types of data" name="obtaining search results for alphabet characters 2" time="7.461">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user enters query as "narendra" in search bar..........................passed
+Then user obtains search results same as "narendra".........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="obtaining search results for various types of data" name="obtaining search results for alphanumeric characters" time="7.369">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user enters query as "10cbse" in search bar............................passed
+Then user obtains search results same as "10cbse"...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="obtaining search results for various types of data" name="obtaining search results for alphanumeric characters 2" time="7.401">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user enters query as "narendra3" in search bar.........................passed
+Then user obtains search results same as "narendra3"........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="obtaining search results for various types of data" name="obtaining search results for numeric characters" time="6.835">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user enters query as "10" in search bar................................passed
+Then user obtains search results same as "10"...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="obtaining search results for various types of data" name="obtaining search results for numeric characters 2" time="7.256">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user enters query as "12" in search bar................................passed
+Then user obtains search results same as "12"...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="obtaining search results for various types of data" name="obtaining search results for numeric characters 3" time="8.421">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user enters query as "30" in search bar................................passed
+Then user obtains search results same as "30"...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="obtaining search results for various types of data" name="not obtaining search results for special characters" time="26.538">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user enters query in search bar from sheet from rownumbers 1...........passed
+Then user does not get results..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="obtaining search results for various types of data" name="not obtaining search results for special characters 2" time="27.564">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user enters query in search bar from sheet from rownumbers 2...........passed
+Then user does not get results..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="obtaining search results for various types of data" name="not obtaining search results for special characters 3" time="26.956">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user enters query in search bar from sheet from rownumbers 3...........passed
+Then user does not get results..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="obtaining search results for various types of data" name="not obtaining search results for special characters 4" time="29.236">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user enters query in search bar from sheet from rownumbers 4...........passed
+Then user does not get results..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search icon visibility" name="Search icon is visible" time="6.349">
+        <system-out><![CDATA[Given user is on learning goal's home page..................................passed
+Then search icon should be visible..........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search icon visibility" name="Search tab is visible after clicking on search icon" time="5.17">
+        <system-out><![CDATA[Given user is on learning goal's home page..................................passed
+And user clicks on search icon..............................................passed
+Then search tab is visible with placeholder.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verify that search results are obtained for various categories" name="obtaining search results under Educators, Courses, Lessons category" time="49.235">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user searches for query "jatin" in search bar..........................passed
+Then search results are available under Educators, Courses or Lessons category.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verify that search results are obtained for various categories" name="visibility of See All button" time="16.817">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user searches for query "narendra" in search bar.......................passed
+Then See All button is visible..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verify that search results are obtained for various categories" name="visibility of expanded search results when user clicks on See All button" time="18.593">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user searches for query "jatin" in search bar..........................passed
+And user clicks on See All button...........................................passed
+Then user is able to see expanded search results............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="navigate through search results" name="redirecting to educator's profile page" time="13.049">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user searches for query "jatin" in search bar..........................passed
+And user clicks on profile under Educator category..........................passed
+Then user is redirected to educator's profile page..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="navigate through search results" name="redirecting to course subscription page" time="11.893">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user searches for query in search bar..................................passed
+And user clicks on search results under Courses category....................passed
+Then user is redirected to course subscription page.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="navigate through search results" name="redirecting to search result from profile page" time="12.037">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user searches for query "jatin" in search bar..........................passed
+And user clicks on profile under Educator category..........................passed
+Then user is redirected to educator's profile page..........................passed
+When user presses back button...............................................passed
+Then user is redirected back to search results..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="navigate through search results" name="redirecting to search result from course subscription page" time="11.682">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user searches for query in search bar..................................passed
+And user clicks on search results under Courses category....................passed
+Then user is redirected to course subscription page.........................passed
+When user presses back button...............................................passed
+Then user is redirected back to search results..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check working of trending list under search bar" name="trending list visibility when user is logged out" time="6.651">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When user clicks on search icon.............................................passed
+Then trending list of educators is visible..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check working of trending list under search bar" name="redirecting to educator's profile page from trending list" time="6.879">
+        <system-out><![CDATA[Given user is on learning goal's homepage...................................passed
+When users clicks on search icon............................................passed
+And user clicks on trending educator from the list..........................passed
+Then user is redirected to appropriate search results.......................passed
+]]></system-out>
+    </testcase>
+</testsuite>
