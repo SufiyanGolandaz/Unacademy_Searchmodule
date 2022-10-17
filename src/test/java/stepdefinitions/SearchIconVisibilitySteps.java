@@ -11,17 +11,19 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.LearningGoalHomePage;
 import utlities.Hooks;
+import utlities.ReadPropFile;
 
 
 public class SearchIconVisibilitySteps{
 	private WebDriver driver=Hooks.driver;
+	ReadPropFile rp=new ReadPropFile();
 
 	private LearningGoalHomePage lghp=new LearningGoalHomePage(driver);
 	
 
 	@Given("user is on learning goal's home page")
 	public void user_is_on_learning_goal_s_home_page() {
-	   driver.get("https://unacademy.com/goal/iit-jam/SIFWL");
+	   driver.get(rp.geturl());
 	    driver.manage().timeouts().implicitlyWait(Duration
 	    		.ofSeconds(5));
 	}

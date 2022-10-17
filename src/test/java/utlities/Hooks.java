@@ -14,11 +14,12 @@ public class Hooks{
 	public static WebDriver driver;
 	ExcelReader reader; 
 	public static XSSFSheet sheet;
+	ReadPropFile rp=new ReadPropFile();
 	
 	
 	@Before(order = 0)
 	public void initDriver() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\safzalgo\\Downloads\\chromedriver\\chromedriver.exe");
+		System.setProperty(rp.getbrowser(),rp.getdriverlocation());
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}

@@ -15,14 +15,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class SearchResultsHomePage {
 	private WebDriver driver;
 	
+	//location for heading after search
 	@FindAll(@FindBy(xpath="//h4[@class='css-gh0zib-H4-Header evy4yrm0']"))
 	WebElement searchheading;
 	
+	//location for "Educator" category heading
 	@FindAll(
 			@FindBy(xpath="//h2[@class='css-1frklj3-H4-StyH4 ejsopzy0']")
 			)
 	WebElement educatorheading;
 	
+	//location for headings of all categories viz "Educators", "Courses& Test Series","Free Lessons"
 	@FindAll({
 			@FindBy(xpath = "//h2[normalize-space()='Educators']"),
 			@FindBy(xpath = "//h2[@class='css-1frklj3-H4-StyH4 ejsopzy0']"),
@@ -32,12 +35,14 @@ public class SearchResultsHomePage {
 			@FindBy(css="#__next > div.css-19fdje3-Container-Container.e1kplr10 > div > div.css-1ech8wl-Content-Content.e1kplr13 > div:nth-child(11) > h2")})
 	List<WebElement> categories;
 	
+	//location for "See All" button
 	@FindAll({
 		@FindBy(css = "css-11urv45-StyledButton-SeeAll"),
 		@FindBy(xpath = "//*[@id=\"__next\"]/div[1]/div/div[2]/div[2]/a/p"),
 		@FindBy(css="body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(6) > a:nth-child(3) > p:nth-child(1)")})
 	WebElement seeallbutton;
 	
+	//location for expanded search results after clicking on see all button
 	@FindAll({
 		@FindBy(css="#__next > div.css-19fdje3-Container-Container.e1kplr10 > div > div.css-1ech8wl-Content-Content.e1kplr13 > a:nth-child(6)"),
 		@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/a[3]/div[1]/div[3]/span[1]/img[1]"),
@@ -46,6 +51,7 @@ public class SearchResultsHomePage {
 	})
 	WebElement expandedresults;
 	
+	//location for 1st educator under "Educator" category
 	@FindAll({
 		@FindBy(xpath="//*[@id='__next']/div[1]/div/div[2]/div[3]/div/div[1]/a"),
 		@FindBy(xpath = " //div[@class='css-1cqew8q-StyledAnchor eyp81ai0']"),
@@ -53,17 +59,20 @@ public class SearchResultsHomePage {
 	})
 	WebElement educator;
 	
+	//location for obtaining url of 1st educator under "Educator" category
 	@FindAll({
 		@FindBy(xpath = "//*[@id=\"__next\"]/div[1]/div/div[2]/div[3]/div/div[1]/a")
 	})
 	WebElement educatorlink;
 	
+	//location for 1st course under "Courses & TestSeries" category
 	@FindAll({
 		@FindBy(xpath = "//body/div[@id='__next']/div[@class='css-19fdje3-Container-Container e1kplr10']/div[@class='css-1xgbxzf-AppContainer-AppContainer e1kplr12']/div[@class='css-1ech8wl-Content-Content e1kplr13']/div[@class='css-dxeo93-CarouselWrapper ejsopzy3']/div[@class='css-1geykmp-CardContainer ejsopzy4']/div[1]/div[1]/a[1]/div[1]/span[1]/img[1]"),
 		@FindBy(css="body > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > span:nth-child(1)")
 	})
 	WebElement course;
 	
+	//location for obtaining url of 1st course under "Courses & TestSeries" category
 	@FindAll({
 		@FindBy(xpath = "//*[@id=\"__next\"]/div[1]/div/div[2]/div[5]/div/div[1]/div/div/div[1]/a")
 	})

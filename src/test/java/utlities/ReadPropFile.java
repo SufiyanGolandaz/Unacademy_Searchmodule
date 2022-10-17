@@ -16,4 +16,16 @@ public class ReadPropFile {
 		return prop.getProperty("query");
 	}
 	
+	public String geturl() {
+		return prop.getProperty("url");
+	}
+	
+	public String getbrowser() {
+		return prop.getProperty("browser");
+	}
+	
+	public String getdriverlocation() {
+		return prop.getProperty("driverlocation");
+	}
+	
 }
